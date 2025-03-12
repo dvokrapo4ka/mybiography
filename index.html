@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>biodvokrapo4ka</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <img src="avatar.jpg" alt="Avatar" class="avatar" />
+    <h2 class="name">dvokrapo4ka</h2>
+    <p id="changing-text" class="changing-text">$ echo "Hello!"</p>
+
+    <div class="links">
+      <a href="https://t.me/dvokrapo4ka" target="_blank">Telegram</a>
+      <a href="https://github.com/dvokrapo4ka" target="_blank">GitHub</a>
+      <a href="https://www.tiktok.com/@dvokrap04ka" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/twokrapka" target="_blank">Instagram</a>
+    </div>
+
+    <div class="footer">2025 © | dvokrapo4ka</div>
+  </div>
+
+  <script>
+    const textElement = document.getElementById('changing-text');
+    const texts = ['Ukraine', 'HW Tech', 'SysAdmin', '#sudo', 'iPhoneUser'];
+    let index = 0;
+
+    setInterval(() => {
+      textElement.classList.remove('fade-in');
+      void textElement.offsetWidth;
+      textElement.textContent = texts[index];
+      textElement.classList.add('fade-in');
+      index = (index + 1) % texts.length;
+    }, 3000);
+  </script>
+</body>
+</html>

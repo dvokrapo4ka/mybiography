@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fcb045, #fd1d1d, #833ab4);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  max-width: 320px;
+  width: 90%;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  margin-bottom: 15px;
+}
+.name {
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+.changing-text {
+  font-size: 16px;
+  color: #eee;
+  min-height: 24px;
+  transition: opacity 0.5s ease-in-out;
+}
+.fade-in {
+  animation: fade 1s ease-in-out;
+}
+@keyframes fade {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 1; }
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.links a {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 15px;
+  border-radius: 12px;
+  color: white;
+  transition: background 0.3s ease;
+  font-weight: 500;
+}
+.links a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.footer {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 10px;
+}
